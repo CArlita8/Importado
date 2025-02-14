@@ -423,3 +423,17 @@ transition: all 0.3s;}
 footer img:hover{transform: scale(1.1);}
 
 /*FIN FOOTER*/
+
+@media (max-width: 768px) {
+    .card-list-products {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas medianas */
+    }
+    /* Otros ajustes para pantallas más pequeñas */
+}
+
+@media (max-width: 480px) {
+    .card-list-products {
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+    }
+    /* Otros ajustes para móviles */
+}
