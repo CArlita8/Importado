@@ -437,3 +437,40 @@ footer img:hover{transform: scale(1.1);}
     }
     /* Otros ajustes para móviles */
 }
+h1 {
+    font-size: 2rem; /* Tamaño de fuente relativo al tamaño de fuente del elemento raíz */
+}
+
+.card {
+    padding: 2%; /* Padding relativo al ancho del contenedor padre */
+}
+/* ... otros estilos ... */
+
+@media (max-width: 768px) {
+    .card-list-products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .card { /* Ajustes para las cards en pantallas medianas */
+        padding: 1%;
+    }
+    h1 {
+        font-size: 1.5rem; /* Reducir el tamaño de fuente en pantallas medianas */
+    }
+    /* ... otros ajustes ... */
+}
+
+@media (max-width: 480px) {
+    .card-list-products {
+        grid-template-columns: 1fr;
+    }
+    .card { /* Ajustes para las cards en móviles */
+        padding: 2%;
+    }
+    h1 {
+        font-size: 1.2rem; /* Reducir aún más el tamaño de fuente en móviles */
+    }
+    .slider { /* Ajustes para el slider en móviles */
+      aspect-ratio: 16/9; /* Ajustar la relación de aspecto del slider */
+    }
+    /* ... otros ajustes ... */
+}
